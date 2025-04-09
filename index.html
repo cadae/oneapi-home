@@ -67,16 +67,11 @@
     }
     .steps {
       padding-left: 25px;
+      list-style-position: outside;
     }
     .steps li {
       margin-bottom: 10px;
-      position: relative;
-    }
-    .steps li::before {
-      content: "→";
-      position: absolute;
-      left: -20px;
-      color: #4A56E2;
+      padding-left: 5px;
     }
     .note {
       background-color: #fffde7;
@@ -106,6 +101,17 @@
         width: 100%;
       }
     }
+    .info-box {
+      background-color: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .info-box h3 {
+      color: #2e7d32;
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -119,20 +125,34 @@
       <span class="credit-emoji">💰</span> $100 free credit upon signup - try powerful models like Gemini 2.5 Pro!
     </div>
 
+    <div class="info-box">
+      <h3>About This Service</h3>
+      <p>AGI Cloud is committed to making advanced AI models easily accessible to everyone. Through our intelligent routing and optimized LLM API service, we ensure you get the best performance and value.</p>
+      <p>This is a non-profit website primarily designed to help users in mainland China access foreign AI APIs by bypassing network restrictions. Currently, all APIs are personally created and maintained to ensure stability and reliability.</p>
+      <p>We welcome API sharing - please send your API keys to support@agicloud.cc. To prevent abuse, we carefully review all shared APIs. You can support server maintenance and API costs through the recharge interface. Every contribution helps keep this service running.</p>
+      <p>If you run out of credits, email us for a $100 redemption code. To prevent abuse, each user can only receive $100 at a time. For large-scale usage, please contact us directly.</p>
+      
+      <h3>关于本服务</h3>
+      <p>AGI Cloud致力于让每个人都能便捷地使用先进的人工智能模型。我们提供智能路由和优化的LLM API调用服务，确保您获得最佳性能和价值。</p>
+      <p>这是一个非盈利目的网站，主要是为了方便国内用户绕过网络限制访问国外AI APIs。目前提供的API均为个人创建并维护，以确保服务稳定可靠。</p>
+      <p>欢迎提供API一起共享，请发送API keys到support@agicloud.cc。为防止滥用，我们会仔细审核所有共享的API。欢迎在充值界面打赏以支持服务器和API支出，每一份贡献都助力服务持续运营。</p>
+      <p>若额度用完可发邮件索取$100兑换码，为了防止滥用所以每次只能获取$100。如需更大规模使用，请直接与我们联系。</p>
+    </div>
+
     <div class="language-section">
       <div class="language-column">
         <div class="section">
           <p class="section-title">How to use:</p>
           <ol class="steps">
             <li>Sign up for a new account</li>
-            <li>Generate an API token with a quota exceeding $1</li>
-            <li>Click the chat button next to your new token</li>
-            <li>Start chatting and exploring!</li>
+            <li>Click the chat button to start a conversation</li>
+            <li>Choose from multiple AI models and start exploring!</li>
           </ol>
           
           <div class="note">
             <strong>Note:</strong> The chat interface is hosted at
-            <code>https://chat.agicloud.com</code>
+            <code>https://chat.agicloud.cc</code><br>
+            All chat histories are stored locally in your browser for absolute privacy. For cross-device sync, we recommend using Upstash (free tier available). No chat data is stored on our servers.
           </div>
         </div>
       </div>
@@ -142,14 +162,14 @@
           <p class="section-title">使用步骤:</p>
           <ol class="steps">
             <li>注册新账户</li>
-            <li>创建一个额度大于1美元的API密钥</li>
-            <li>在新密钥的操作栏点击聊天按钮</li>
-            <li>开始体验与大模型对话的乐趣!</li>
+            <li>点击聊天按钮开始对话</li>
+            <li>选择不同AI模型开始探索使用!</li>
           </ol>
           
           <div class="note">
             <strong>注意:</strong> 聊天界面位于
-            <code>https://chat.agicloud.cc</code>
+            <code>https://chat.agicloud.cc</code><br>
+            所有聊天记录均保存在浏览器本地以保证绝对隐私，若需跨设备同步聊天记录请使用Upstash（有免费额度）。我们的服务器不存储任何对话数据。
           </div>
         </div>
       </div>
